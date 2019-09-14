@@ -1,0 +1,13 @@
+.main-char{
+  text-align: center;
+  
+     
+}
+.char-p{
+  max-height: 0px
+}
+.border{
+    width:30px;
+    height: 5px;
+    background-color: black
+}

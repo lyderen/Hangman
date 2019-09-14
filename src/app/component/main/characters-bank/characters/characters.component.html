@@ -1,0 +1,9 @@
+<!-- <div class="main-char ">
+      
+
+     <p>{{char}}</p>
+</div> -->
+
+<button class="w3-button w3-xlarge w3-circle main-char" (click)="charClick($event)" [disabled]="char.disabilty">
+    <span  [hidden]="char.visbilty" >{{char.char}}</span>
+</button>

@@ -1,0 +1,8 @@
+@media(max-width:1000px){
+    img{
+        height: 260px !important;
+    }
+    .main-hang-section{
+        text-align: center
+    }
+}

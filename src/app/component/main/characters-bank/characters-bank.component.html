@@ -1,0 +1,22 @@
+<div class="main-bank ">
+       <div class="row list" >
+              <div *ngFor="let leter of leterListA">
+
+            <app-characters  [char]="leter" (clickChar)="heandelClickChar($event)"> </app-characters>
+     </div>
+        </div>
+        <div class="row list list-b" >
+                <div *ngFor="let leter of leterListB">
+  
+              <app-characters  [char]="leter" (clickChar)="heandelClickChar($event)"> </app-characters>
+       </div>
+          </div>
+          <div class="row list list-c" >
+                <div *ngFor="let leter of leterListC">
+  
+              <app-characters  [char]="leter" (clickChar)="heandelClickChar($event)"> </app-characters>
+       </div>
+          </div>
+      
+       
+</div>

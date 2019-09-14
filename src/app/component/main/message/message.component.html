@@ -1,0 +1,16 @@
+<div class=" main-msg">
+   
+    <div class="column msg" *ngIf="appService.Msg=='die'">
+        <img [src]="erorrMsg" style="height: 100px" />
+          <h1>you</h1>
+          <h1>die</h1>
+          <button type="button" class="btn btn-secondary btn-lg btn-block" (click)="refresh()">Try Agin</button>
+    </div>
+    <div class="column msg" *ngIf="appService.Msg=='win'"  >
+
+        <img [src]="succsessMsg" style="height: 100px" />
+        <h1>you</h1>
+          <h1>win</h1>
+          <button type="button" class="btn btn-secondary btn-lg btn-block" (click)="refresh()" >Try Agin</button>
+    </div>
+</div>
