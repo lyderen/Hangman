@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { MainComponent } from './component/main/main.component';
@@ -22,11 +23,13 @@ import { CharacterMovieComponent } from './component/main/characters-movie/chara
     MessageComponent,
     HangSectionComponent,
     CharactersComponent,
-    CharacterMovieComponent
+    CharacterMovieComponent,
+    
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

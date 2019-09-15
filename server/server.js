@@ -6,6 +6,27 @@ const movies = require('./images/movieJson')
 const {listA,listB,listC} = require('./leter')
 
 
+// const db = require('./configDB').mongoURI;
+
+// mongoose
+//   .connect(db, { useNewUrlParser: true }) // Let us remove that nasty deprecation warrning :)
+//   .then(() => console.log('MongoDB Connected'))
+//   .catch(err => console.log(err));
+
+
+// const Movies = require('./movies');
+
+
+
+
+
+
+
+
+
+
+
+
 const app = express();
 
 // Serve static files....
@@ -32,7 +53,7 @@ app.get('/hangaction', function(req, res) {
 });
 
 app.get('/getmovies', function(req, res) {
-  res.send(movies);
+ res.send(movies)
 });
 
 

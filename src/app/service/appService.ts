@@ -4,6 +4,7 @@ import { Observable, Subject } from 'rxjs';
 import { ThrowStmt } from '@angular/compiler';
 import { HttpClient } from '@angular/common/http';
 
+
 import {ILeter} from './leter'
 import {IUrls} from './urlsHang';
 
@@ -22,31 +23,31 @@ export class AppService {
   }
 
   getUrls (): Observable<IUrls[]>{
-    return this.http.get<IUrls[]>('http://localhost:3000/hangaction')
+    return this.http.get<IUrls[]>('https://tranquil-spire-35948.herokuapp.com/hangaction')
   }
 
     getLeterA (): Observable<ILeter[]>{
-      return this.http.get<ILeter[]>('http://localhost:3000/getleterA')
+      return this.http.get<ILeter[]>('https://tranquil-spire-35948.herokuapp.com/getleterA')
     }
    
     getLeterB (): Observable<ILeter[]>{
-      return this.http.get<ILeter[]>('http://localhost:3000/getleterB')
+      return this.http.get<ILeter[]>('https://tranquil-spire-35948.herokuapp.com/getleterB')
     }
     getLeterC (): Observable<ILeter[]>{
-      return this.http.get<ILeter[]>('http://localhost:3000/getleterC')
+      return this.http.get<ILeter[]>('https://tranquil-spire-35948.herokuapp.com/getleterC')
     }
 
     getMovies (): Observable<[]>{
-      return this.http.get<[]>('http://localhost:3000/getmovies')
+      return this.http.get<[]>('https://tranquil-spire-35948.herokuapp.com/getmovies')
     }
 
     getHangImg (): Observable<[any]>{
-      return this.http.get<[any]>('http://localhost:3000/hangaction')
+      return this.http.get<[any]>('https://tranquil-spire-35948.herokuapp.com/hangaction')
     }
 
     
     getMsgImg (): Observable<[any]>{
-      return this.http.get<[any]>('http://localhost:3000/messages')
+      return this.http.get<[any]>('https://tranquil-spire-35948.herokuapp.com/messages')
     }
 
 
